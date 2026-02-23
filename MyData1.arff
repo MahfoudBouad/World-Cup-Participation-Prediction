@@ -1,0 +1,64 @@
+@relation world_cup_participation
+@This dataset integrates information from various reputable sources such as FIFA and Big 5 European Leagues Nationalities (FBref.com), reflecting the multifaceted aspects of national soccer teams.
+
+@attribute Team {Australia, IR_Iran, Japan, Korea_Republic, Algeria, Cameroon, Côte_d'Ivoire, Egypt, Morocco, Nigeria, Senegal, Tunisia, Canada, Mexico, Panama, USA, Argentina, Brazil, Chile, Colombia, Ecuador, Peru, Uruguay, Venezuela, Austria, Belgium, Croatia, Czechia, Denmark, England, France, Germany, Greece, Hungary, Italy, Netherlands, Norway, Poland, Portugal, Romania, Russia, Scotland, Serbia, Slovakia, Spain, Sweden, Switzerland, Türkiye, Ukraine, Wales}
+@attribute Rank numeric % FIFA ranking of the team
+@attribute TotalPoints numeric % Total points in the FIFA ranking
+@attribute Confederation {AFC, CAF, CONCACAF, CONMEBOL, UEFA, ...} % Confederation to which the team belongs
+@attribute NumberLocalFinals numeric % Number of local finals the team has played
+@attribute PlayedFinal {Yes, No} % Whether the team has played in a final match
+@attribute WorldCupParticipations numeric % Number of times the team has participated in the World Cup
+@attribute AVG numeric % Average goals per match
+@attribute PlayedQWorldCup22 {Yes, No} % Whether the team played in the World Cup 2022 qualifiers
+
+@data
+Australia,25,1539.22,AFC,2,No,6,2.25,Yes,No,3
+'IR Iran',21,1565.08,AFC,3,No,6,3,Yes,No,2
+Japan,17,1620.19,AFC,5,Yes,7,4.33,Yes,No,18
+'Korea Republic',23,1550.65,AFC,4,No,11,4.67,Yes,No,8
+Algeria,30,1520.26,CAF,3,No,4,2.33,No,No,24
+Cameroon,46,1463.06,CAF,7,No,8,3.25,Yes,No,5
+'Côte d\'Ivoire',49,1447.65,CAF,4,No,3,2.33,No,No,41
+Egypt,33,1518.91,CAF,10,Yes,3,3.5,No,No,4
+Morocco,13,1661.69,CAF,2,No,6,2,Yes,Yes,41
+Nigeria,42,1474.44,CAF,7,No,6,1.5,Yes,No,25
+Senegal,20,1594.31,CAF,3,Yes,3,3,Yes,No,45
+Tunisia,28,1523.23,CAF,3,No,6,1,Yes,No,9
+Canada,48,1453.76,CONCACAF,1,Yes,3,3.5,Yes,No,7
+Mexico,15,1652.7,CONCACAF,11,Yes,18,2.5,Yes,No,9
+Panama,41,1475.62,CONCACAF,3,Yes,1,2.83,No,No,1
+USA,12,1665.27,CONCACAF,12,No,12,4,Yes,No,24
+Argentina,1,1855.2,CONMEBOL,29,Yes,18,2.14,Yes,Yes,70
+Brazil,5,1784.09,CONMEBOL,20,No,22,2.14,Yes,Yes,23
+Chile,40,1489.82,CONMEBOL,6,No,9,1.6,No,No,7
+Colombia,14,1655.29,CONMEBOL,2,No,6,2,No,No,27
+Ecuador,32,1519.2,CONMEBOL,0,No,4,2.8,Yes,No,5
+Peru,35,1512.68,CONMEBOL,3,No,5,3.43,No,No,1
+Uruguay,11,1665.99,CONMEBOL,21,No,14,1.2,Yes,No,29
+Venezuela,50,1447.2,CONMEBOL,0,No,2,2,No,No,4
+Austria,24,1546.1,UEFA,0,No,7,2.125,No,No,34
+Belgium,4,1798.46,UEFA,1,No,14,2.75,Yes,No,105
+Croatia,10,1717.57,UEFA,0,No,6,1.625,Yes,Yes,33
+Czechia,39,1494.04,UEFA,2,No,9,1.5,No,No,16
+Denmark,19,1601.31,UEFA,1,No,6,1.9,Yes,No,42
+England,3,1800.05,UEFA,1,Yes,16,2.75,Yes,Yes,252
+France,2,1845.44,UEFA,3,No,16,3.625,Yes,Yes,364
+Germany,16,1631.22,UEFA,6,No,20,2.75,Yes,No,276
+Greece,47,1453.95,UEFA,1,No,3,1.75,No,No,18
+Hungary,27,1525.13,UEFA,0,No,9,2,No,No,10
+Italy,9,1718.82,UEFA,4,Yes,18,2,No,No,287
+Netherlands,6,1745.48,UEFA,1,No,11,2.125,Yes,Yes,63
+Norway,44,1472.36,UEFA,0,No,3,1.75,No,No,25
+Poland,31,1520.24,UEFA,0,No,9,1.25,Yes,No,32
+Portugal,7,1745.06,UEFA,2,No,8,3.6,Yes,Yes,63
+Romania,43,1472.73,UEFA,0,No,7,1.6,No,No,13
+Russia,38,1498.84,UEFA,4,No,11,1.3,No,No,5
+Scotland,36,1506.89,UEFA,0,No,8,2.125,No,No,25
+Serbia,34,1517.43,UEFA,2,No,13,1.875,Yes,No,40
+Slovakia,45,1465.73,UEFA,0,No,9,1.7,No,No,13
+Spain,8,1732.64,UEFA,4,No,16,3.125,Yes,No,463
+Sweden,26,1530.19,UEFA,0,No,12,1.75,No,No,27
+Switzerland,18,1613.44,UEFA,0,No,12,2.2,Yes,No,34
+Türkiye,37,1505.28,UEFA,0,No,2,1.75,No,No,14
+Ukraine,22,1553.35,UEFA,0,No,1,1.375,No,No,13
+Wales,29,1521.88,UEFA,0,No,0,1.25,Yes,No,19
